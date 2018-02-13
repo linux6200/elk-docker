@@ -9,8 +9,8 @@ Based on alpine linux for minimal size.
 
 # Build
 ```bash
-docker build -t guozb/elasticsearch-x-pack . --file Dockerfile_elasticsearch-x-pack
-docker build -t guozb/kibana-x-pack . --file Dockerfile_kibana-x-pack
+docker build -t linux6200/elasticsearch-x-pack . --file Dockerfile_elasticsearch-x-pack
+docker build -t linux6200/kibana-x-pack . --file Dockerfile_kibana-x-pack
 ```
 
 # Usage
