@@ -37,6 +37,12 @@ user: elastic
 pass: changeme
 
 # Upgrade-Cr
+Replace the jar file
+```bash
+cp x-pack-${version}.jar /usr/share/elasticsearch/plugins/x-pack/x-pack-${version}.jar
+```
+
+Put a lic.
 ```bash
 curl -XPUT -u elastic:changeme 'http://127.0.0.1:9200/_xpack/license?acknowledge=true' -H "Content-Type: application/json" -d @lic.json
 ```
