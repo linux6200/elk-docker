@@ -35,3 +35,13 @@ docker run -p 5601:5601 --link es-xpack:elasticsearch --name kb-xpack -d guozb/k
 login with
 user: elastic
 pass: changeme
+
+# Upgrade-Cr
+```bash
+curl -XPUT -u elastic:changeme 'http://127.0.0.1:9200/_xpack/license?acknowledge=true' -H "Content-Type: application/json" -d @lic.json
+```
+
+Query Lic status
+```base
+curl -XGET -u elastic:changeme 'http://127.0.0.1:9200/_xpack/license'
+```
