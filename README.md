@@ -8,8 +8,10 @@ Elasticsearch 6 with x-pack plugin installed.
 Based on alpine linux for minimal size.
 
 # Build
+```bash
 docker build -t guozb/elasticsearch-x-pack . --file Dockerfile_elasticsearch-x-pack
 docker build -t guozb/kibana-x-pack . --file Dockerfile_kibana-x-pack
+```bash
 
 # Usage
 
