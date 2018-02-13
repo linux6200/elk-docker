@@ -1,0 +1,6 @@
+FROM kibana
+
+RUN /usr/share/kibana/bin/kibana-plugin install x-pack
+
+EXPOSE 5601
+CMD ["kibana"]

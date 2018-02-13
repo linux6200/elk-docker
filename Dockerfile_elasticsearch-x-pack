@@ -1,0 +1,4 @@
+FROM elasticsearch
+
+RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install x-pack --batch
+VOLUME ["/usr/share/java/elasticsearch/plugins","/usr/share/java/elasticsearch/config","/usr/share/java/elasticsearch/data","/dump"]
